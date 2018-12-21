@@ -5,16 +5,16 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'cheap-eval-source-map',
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
   },
   module: {
     rules: [{
       test: /\.scss$/,
       use: [
-        "style-loader",
-        "css-loader",
-        "sass-loader"
-      ]
-    }]
-  }
+        'style-loader',
+        'css-loader',
+        'sass-loader',
+      ],
+    }],
+  },
 });
