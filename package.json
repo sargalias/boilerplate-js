@@ -2,7 +2,7 @@
   "name": "boilerplate-js",
   "version": "1.0.0",
   "description": "Simple boilerplate for a front end JS project.",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
