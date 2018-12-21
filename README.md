@@ -4,16 +4,20 @@
 
 - Webpack
 - Babel
-- Sourcemaps
-- Minification
-- Scss
-- Development server
-- Dist directory refresh plugin
-- Auto-generated index.html file
-- Code-splitting
+- Sourcemaps (devtool from webpack)
+- JS minification (comes with webpack)
+- Scss (sass-loader)
+- Development server (devServer from webpack)
+- Dist directory refresh plugin (CleanWebpackPlugin)
+- Auto-generated index.html file (HtmlWebpackPlugin)
+- Code-splitting (webpack configuration)
 - Suitable production options (separate from development options)
   - CSS extraction into a separate file
-  - Sourcemaps
+- ESLint for JS
+- PostCSS with
+  - CSSNano for minification
+  - Autoprefixer
+CSS linting with stylelint-webpack-plugin
 
 ## Modify the configuration
 
