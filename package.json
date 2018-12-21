@@ -1,11 +1,12 @@
 {
-  "name": "Boilerplate JS project",
+  "name": "boilerplate-js",
   "version": "1.0.0",
   "description": "Simple boilerplate for a front end JS project.",
   "main": "app.js",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "lint": "eslint ./src"
   },
   "author": "Spyros Argalias",
   "license": "ISC",
@@ -15,6 +16,10 @@
     "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^2.0.0",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.10.0",

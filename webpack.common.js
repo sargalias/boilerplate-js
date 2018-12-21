@@ -13,5 +13,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: '100 Days CSS'
     })
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "eslint-loader",
+      }
+    ]
+  }
 };
