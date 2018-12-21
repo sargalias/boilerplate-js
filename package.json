@@ -1,7 +1,7 @@
 {
-  "name": "100-days-css",
+  "name": "Boilerplate JS project",
   "version": "1.0.0",
-  "description": "100 Days CSS challenge",
+  "description": "Simple boilerplate for a front end JS project.",
   "main": "app.js",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
