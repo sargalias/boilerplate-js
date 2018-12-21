@@ -17,7 +17,7 @@
 - PostCSS with
   - CSSNano for minification
   - Autoprefixer
-CSS linting with stylelint-webpack-plugin
+CSS linting with stylelint-webpack-plugin and the standard configuration.
 
 ## Modify the configuration
 
