@@ -24,4 +24,9 @@ module.exports = merge(common, {
       chunkFilename: '[id].[hash].css',
     }),
   ],
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
 });
