@@ -34,6 +34,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: '100 Days CSS',
     }),
-    new StyleLintPlugin(),
+    new StyleLintPlugin({
+      emitErrors: false,
+    }),
   ],
 };
