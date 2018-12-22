@@ -26,3 +26,5 @@ It's recommended that you go through the configuration in this boilerplate and m
 For each option, it's recommended that you check the relevant documentation and then make your changes.
 
 For example, ESLint will probably need modification to something that's suitable for you and your project.
+
+For code splitting, currently all vendor packages are separated in a single file which can be quite big. You might want to only separate just your core libraries. See the SplitChunksPlugin for more details.

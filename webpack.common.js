@@ -5,7 +5,6 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 module.exports = {
   entry: {
     app: './src/app.js',
-    other: './src/other.js',
   },
   output: {
     filename: '[name].[contenthash].js',
