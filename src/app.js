@@ -1,3 +1,4 @@
+import './app.scss';
 import _ from 'lodash';
 
 const div = document.createElement('div');
