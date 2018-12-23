@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const PreloadWebpackPlugin = require('preload-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
@@ -32,8 +33,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: '100 Days CSS',
+      title: 'Boilerplate JS',
     }),
+    new PreloadWebpackPlugin(),
     new StyleLintPlugin({
       emitErrors: false,
     }),
