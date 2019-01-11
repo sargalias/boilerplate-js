@@ -34,6 +34,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Boilerplate JS',
+      template: './src/index.html',
     }),
     new PreloadWebpackPlugin(),
     new StyleLintPlugin({
