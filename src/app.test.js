@@ -1,5 +1,8 @@
-import app from './app';
+import React from 'react';
+import { shallow } from 'enzyme';
+import App from './app';
 
 test('test', () => {
-  expect(1 + 1).toBe(2);
+  const wrapper = shallow(<App />);
+  expect(wrapper.text()).toBe('Hello World!');
 });
