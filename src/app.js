@@ -1,28 +1,40 @@
 import './app.scss';
-import _ from 'lodash';
 
 const div = document.createElement('div');
-div.innerHTML = 'Hello World';
-document.body.appendChild(div);
-import('path')
-  .then(path => path.join('', ''));
-import('os')
-  .then(os => os.constants);
-
+const h1 = document.createElement('h1');
+h1.innerText = 'Hello World!';
 const button = document.createElement('button');
-button.innerText = 'Click me';
-document.body.appendChild(button);
+const button2 = document.createElement('button');
+
+div.appendChild(h1);
+div.appendChild(button);
+div.appendChild(button2);
+document.body.appendChild(div);
+
+// Preloaded script
+button.innerText = 'Load preloaded script';
 button.addEventListener('click', () => {
   import(
-    './other'
+    './preloadedScript',
     /* webpackPreload: true */
-    /* webpackChunkName: "other" */
-    )
-    .then(other => console.log(other.default()));
+    /* webpackChunkName: 'preloadedScript' */
+  ).then((script) => {
+    const p = document.createElement('p');
+    p.innerText = script.default.text;
+    div.appendChild(p);
+  });
 });
 
-import(
-  './third'
-  /* webpackPreload: true */
-  /* webpackChunkName: "third" */
-);
+// Prefetched script
+button2.innerText = 'Load preloaded script';
+button2.addEventListener('click', () => {
+  import(
+    './prefetchedScript',
+    /* webpackPrefetch: true */
+    /* webpackChunkName: 'prefetchedScript' */
+  ).then((script) => {
+    const p = document.createElement('p');
+    p.innerText = script.default.text;
+    div.appendChild(p);
+  });
+});
