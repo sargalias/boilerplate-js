@@ -6,9 +6,11 @@
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
+    "build:dev": "webpack --config webpack.dev.js",
     "lint": "eslint ./src/",
     "lint:fix": "eslint ./src/ --fix",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "Spyros Argalias",
   "license": "ISC",
