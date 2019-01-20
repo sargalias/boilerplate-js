@@ -19,12 +19,12 @@ module.exports = merge(common, {
     }],
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
     new MiniCssExtractPlugin({
       filename: '[name].[hash].css',
       chunkFilename: '[id].[hash].css',
     }),
     new webpack.HashedModuleIdsPlugin(),
+    new CleanWebpackPlugin(['dist']),
   ],
   optimization: {
     splitChunks: {
