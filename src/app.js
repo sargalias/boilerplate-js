@@ -26,7 +26,7 @@ button.addEventListener('click', () => {
 });
 
 // Prefetched script
-button2.innerText = 'Load preloaded script';
+button2.innerText = 'Load prefetched script';
 button2.addEventListener('click', () => {
   import(
     './prefetchedScript',
