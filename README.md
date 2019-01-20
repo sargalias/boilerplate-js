@@ -25,6 +25,9 @@
 - Separate webpack configuration files for production, development and common.
 - Jest for unit testing.
 
+- React
+- Enzyme for React testing
+
 
 ## Modify the configuration
 
