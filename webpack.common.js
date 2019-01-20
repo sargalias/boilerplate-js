@@ -35,7 +35,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Boilerplate JS',
     }),
-    new PreloadWebpackPlugin(),
+    new PreloadWebpackPlugin({ rel: 'prefetch' }),
     new StyleLintPlugin({
       emitErrors: false,
     }),
