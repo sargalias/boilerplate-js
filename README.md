@@ -21,6 +21,7 @@
 - PostCSS with
   - CSSNano for minification
   - Autoprefixer
+  - CSS declaration sorting for smaller file size after gZip with css-declaration-sorter
 - CSS linting with stylelint-webpack-plugin and the standard configuration.
 - Separate webpack configuration files for production, development and common.
 - Jest for unit testing.
