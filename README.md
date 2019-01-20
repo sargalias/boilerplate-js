@@ -28,6 +28,7 @@
 
 - React
 - Enzyme for React testing
+- CSS modules for scoping CSS.
 
 
 ## Modify the configuration
