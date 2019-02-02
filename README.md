@@ -58,3 +58,15 @@ Some example options you might want to change:
 ## Notes
 
 **Please note that the sourcemaps for CSS with the devServer produce a bad FOUC effect. This is apparently a bug in the relevant packages. This does not happen with the production build.**
+
+For the devServer to work correctly with a single page app, you'll need to add the following options in your webpack config.
+
+```
+output: {
+  publicPath: '/' // this is the directory that the server will serve your files from
+},
+
+devServer: {
+    historyApiFallback: true // serves the index.html page instead of 404 responses
+}
+```
