@@ -40,3 +40,8 @@ Some example options you might want to change:
   - You might want to process CSS and JS files separately (see the mini-css-extract-plugin for details).
   - You might want to add path aliases for your project.
   - Etc.
+
+
+## Notes
+
+**Please note that the sourcemaps for CSS with the devServer produce a bad FOUC effect. This is apparently a bug in the relevant packages. This does not happen with the production build.**
