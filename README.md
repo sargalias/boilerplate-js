@@ -26,6 +26,9 @@
 - CSS declaration sorting for smaller file size after gZip with the PostCSS css-declaration-sorter plugin.
 - Separate webpack configuration files for production, development and common.
 - Jest for unit testing.
+- Prettier code formatter
+  - package.json command "format" to format all the code in the "src" directory.
+  - Build fails on ESLint errors.
 
 
 ## Modify the configuration

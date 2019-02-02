@@ -14,27 +14,25 @@ document.body.appendChild(div);
 // Preloaded script
 button.innerText = 'Load preloaded script';
 button.addEventListener('click', () => {
-  import(
-    './preloadedScript',
+  import('./preloadedScript')
     /* webpackPreload: true */
     /* webpackChunkName: 'preloadedScript' */
-  ).then((script) => {
-    const p = document.createElement('p');
-    p.innerText = script.default.text;
-    div.appendChild(p);
-  });
+    .then(script => {
+      const p = document.createElement('p');
+      p.innerText = script.default.text;
+      div.appendChild(p);
+    });
 });
 
 // Prefetched script
 button2.innerText = 'Load prefetched script';
 button2.addEventListener('click', () => {
-  import(
-    './prefetchedScript',
+  import('./prefetchedScript')
     /* webpackPrefetch: true */
     /* webpackChunkName: 'prefetchedScript' */
-  ).then((script) => {
-    const p = document.createElement('p');
-    p.innerText = script.default.text;
-    div.appendChild(p);
-  });
+    .then(script => {
+      const p = document.createElement('p');
+      p.innerText = script.default.text;
+      div.appendChild(p);
+    });
 });
