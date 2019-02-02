@@ -1,15 +1,12 @@
 {
-    "parser": "babel-eslint",
-    "extends": [
-        "airbnb-base",
-        "plugin:prettier/recommended"
-    ],
-    "env": {
-        "browser": true,
-        "node": true,
-        "jest": true
-    },
-    "rules": {
-        "linebreak-style": "off"
-    }
+  "parser": "babel-eslint",
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "linebreak-style": "off"
+  }
 }
