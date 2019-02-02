@@ -50,6 +50,9 @@ Some example options you might want to change:
   - @babel/plugin-proposal-class-properties for easy instance variables without a constructor
   - @babel/plugin-transform-regenerator to allow you to use async / await
 - You may want to use the babel polyfill for non-ES6 browsers.
+- Add HTML minification.
+- Add HTTPS for the devServer.
+- Add hot module reloading.
 - Etc.
 
 ## Notes
