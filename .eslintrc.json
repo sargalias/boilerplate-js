@@ -1,21 +1,21 @@
 {
-    "parser": "babel-eslint",
-    "extends": [
-        "airbnb-base",
-        "plugin:react/recommended",
-        "plugin:prettier/recommended"
-    ],
-    "env": {
-        "browser": true,
-        "node": true,
-        "jest": true
-    },
-    "rules": {
-        "linebreak-style": "off"
-    },
-    "settings": {
-        "react": {
-            "version": "detect"
-        }
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb-base",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "linebreak-style": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
     }
+  }
 }
