@@ -3,26 +3,34 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const merge = require('webpack-merge');
 const common = require('./webpack.common');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
   devtool: 'cheap-module-source-map',
   module: {
-    rules: [{
-      test: /\.scss$/,
-      use: [
-        MiniCssExtractPlugin.loader,
-        {
-          loader: 'css-loader',
-          options: {
-            modules: true,
-            localIdentName: '[local]--[hash:base64:5]',
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              localIdentName: '[local]--[hash:base64:5]',
+            },
           },
-        },
-        'postcss-loader',
-        'sass-loader',
-      ],
-    }],
+          'postcss-loader',
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ['babel-loader', 'eslint-loader'],
+      },
+    ],
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -30,6 +38,7 @@ module.exports = merge(common, {
       chunkFilename: '[id].[hash].css',
     }),
     new webpack.HashedModuleIdsPlugin(),
+    new StyleLintPlugin(),
     new CleanWebpackPlugin(['dist']),
   ],
   optimization: {
