@@ -25,6 +25,9 @@
 - CSS linting with stylelint-webpack-plugin and the standard configuration.
 - Separate webpack configuration files for production, development and common.
 - Jest for unit testing.
+- Prettier code formatter
+  - package.json command "format" to format all the code in the "src" directory.
+  - Build fails on ESLint errors.
 
 - React
 - Enzyme for React testing
