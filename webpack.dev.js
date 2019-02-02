@@ -5,6 +5,9 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 module.exports = merge(common, {
   mode: 'development',
   devtool: 'cheap-eval-source-map',
+  devServer: {
+    contentBase: './dist',
+  },
   module: {
     rules: [
       {
