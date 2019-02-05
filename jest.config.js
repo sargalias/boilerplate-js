@@ -5,4 +5,5 @@ module.exports = {
     '\\.(css|less|scss|sass)$': '<rootDir>/__mocks__/styleMock.js',
   },
   setupFiles: ['<rootDir>enzyme.config.js'],
+  snapshotSerializers: ['enzyme-to-json/serializer'],
 };
