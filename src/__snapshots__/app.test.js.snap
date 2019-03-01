@@ -6,3 +6,11 @@ Array [
   2,
 ]
 `;
+
+exports[`snapshot app 1`] = `
+<h1
+  className="sampleClass"
+>
+  Hello World!
+</h1>
+`;
